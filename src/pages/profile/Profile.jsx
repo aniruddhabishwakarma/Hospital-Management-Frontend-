@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import UserInfoContext from '../../context/UserInfoProvider'
 
 const Profile = () => {
+  const [userInfo] = useContext(UserInfoContext)
+  console.log(userInfo);
   return (
     <>
-        <h1>This is profile page</h1>
+        
     </>
   )
 }

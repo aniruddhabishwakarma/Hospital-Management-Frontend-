@@ -8,6 +8,10 @@ import Settings from './pages/settings/Settings'
 import AdminDashboard from './pages/admin/AdminDashboard'
 import ManagerDashboard from './pages/manager/ManagerDashboard'
 import Login from './pages/login/Login'
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import { AuthProvider } from './context/AuthProvider'
+import { UserInfoProvider } from './context/UserInfoProvider'
 
 
 const router  = createBrowserRouter(
@@ -28,7 +32,12 @@ const router  = createBrowserRouter(
 function App({routes}) {
   return (
     <>
-      <RouterProvider router = {router}/>
+    <AuthProvider>
+    <UserInfoProvider>
+        <RouterProvider router = {router}/>
+    </UserInfoProvider>
+    </AuthProvider>
+      
     </>
   )
 }

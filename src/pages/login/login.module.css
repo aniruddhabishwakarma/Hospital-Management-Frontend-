@@ -5,20 +5,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:  #423F3E ;
+    background-color: #f6f8fc;
 
 }
+
 .login{
-    height : auto;
-    width : 400px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    position: absolute;
-    padding : 20px;
     align-items: center;
-    background-color:#171010;
+    justify-content: space-evenly;
+    box-shadow: 4px 4px 4px rgb(180, 179, 179);
+    padding: 20px;
+    width: 400px;
+    gap: 20px;
+}
+.errorText{
+    color : #362222;
+}
+.blackBorder{
+    border: 1px solid black;
 }
 .heading{
-    margin-bottom: 20px;
+    font-weight: bold;
+}
+.register{
+    font-size: 13px;
+}
+.registerButton{
+    border: none;
+    background-color: white;
+    margin-left: 10px;
+    color : blue;
 }
